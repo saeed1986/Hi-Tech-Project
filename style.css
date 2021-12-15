@@ -11,6 +11,7 @@ html {
 body {
     font-size: 1.6rem;
     color: white;
+    background-color: black;
 }
 
 /* header */
@@ -24,7 +25,7 @@ body {
 
 .h-box {
     color: white;
-    padding-top: 10rem;
+    padding-top: 15rem;
     margin-left: 75rem;
     font-size: 1.6rem;
     font-family: sans-serif;
@@ -64,29 +65,35 @@ body {
     background-image: url(/Bild\ Material/turing-bg.jpg);
     background-repeat: no-repeat;
     background-color: black;
-    height: 82.4rem;
-    text-align: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .t-h2 {
     color: white;
     text-align: center;
     font-family: sans-serif;
-    padding: 6rem 0rem 2rem;
+    padding: 5rem 0rem;
+}
+
+.t-border {
+    text-align: center;
+    width: 80vw;
 }
 
 .t-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0rem 20rem 0rem 10rem;
     color: white;
     column-gap: 5rem;
     row-gap: 5rem;
-    text-align: left;
+    width: 90%;
+    padding: 5rem 15rem 5rem 5rem;
+    height: auto;
 }
 
 .t-box-item {
-    padding-left: 10rem;
+    padding-left: 0rem;
 }
 
 .t-box-item-headline {
@@ -197,4 +204,53 @@ body {
     font-family: sans-serif;
     text-align: left;
     line-height: 1.2;
+}
+
+
+/* media Queries */
+
+@media (max-width: 1150px) {
+
+    .header {
+        background-image: url(/Bild\ Material/header-medium.jpg);
+        background-color: rgb(4, 4, 4);
+        margin-left: -10rem;
+    }
+
+    .h-box {
+        margin-left: 70rem;
+    }
+
+    .t-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    .header {
+        background-image: url(/Bild\ Material/header-medium.jpg);
+    }
+
+    // .h-box {
+    //     margin-left: 75rem;
+    //     width: 60rem;
+    //     padding-top: 10rem;
+    // }
+}
+
+@media (max-width: 550px) {
+
+    .header {
+        background-image: url(/Bild\ Material/header-small.jpg);
+        width: 100rem;
+        height: auto;
+    }
+
+    .h-box {
+        padding-top: 4rem;
+        margin-left: 67rem;
+    }
+
 }

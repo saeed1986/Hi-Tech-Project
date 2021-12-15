@@ -15,13 +15,14 @@ body {
 
 /* header */
 
-header {
+.header {
     background-image: url(/Bild\ Material/header.jpg);
     background-repeat: no-repeat;
+    background-color: black;
     height: 52.4rem;
 }
 
-.header-box {
+.h-box {
     color: white;
     padding-top: 10rem;
     margin-left: 75rem;
@@ -35,7 +36,7 @@ header {
 }
 
 .h-h4 {
-    color: red;
+    color: rgb(105, 171, 0);
     padding-bottom: 0.3rem;
     text-transform: uppercase;
 }
@@ -47,8 +48,8 @@ header {
     padding: 1rem 0rem;
 }
 
-.h-p-1 {
-    color: red;
+.h-p-green {
+    color: rgb(105, 171, 0);
     padding-top: 1rem;
 }
 
@@ -62,6 +63,7 @@ header {
 .teasor {
     background-image: url(/Bild\ Material/turing-bg.jpg);
     background-repeat: no-repeat;
+    background-color: black;
     height: 82.4rem;
     text-align: center;
 }
@@ -88,13 +90,111 @@ header {
 }
 
 .t-box-item-headline {
-    color: red;
+    color: rgb(105, 171, 0);
     font-size: 1.8rem;
     padding-bottom: 2rem;
+    font-family: sans-serif;
 }
 
 .t-box-item-text {
     line-height: 1.5;
     font-size: 1.8rem;
     font-family: sans-serif;
+}
+
+/* hero */
+
+.hero {
+    background-image: url(/Bild\ Material/rtx-erleben.jpg);
+    background-repeat: no-repeat;
+    height: 58rem;
+    background-color: black;
+}
+
+.he-box {
+    padding: 15rem 21rem;
+    width: 75rem;
+    color: white;
+}
+
+.h-box-headline {
+    color: white;
+    padding-bottom: 1.5rem;
+}
+
+.h-box-text {
+    line-height: 1.5;
+}
+
+/* main */
+
+.main {
+    background-color: black;
+    height: 100rem;
+}
+
+.m-header {
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 5rem;
+    font-family: sans-serif;
+}
+
+.m-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5rem;
+    column-gap: 5rem;
+    font-family: sans-serif;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 5rem;
+}
+
+.m-box-item {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.m-box-item-headline {
+    justify-self: center;
+    align-self: center;
+    color: rgb(121, 183, 49);
+}
+
+/* footer */
+
+.footer {
+    background-color: black;
+    height: 23rem;
+    color: rgb(80, 80, 80);
+    position: relative;
+}
+
+.f-box {
+    border-top: 5px solid rgb(121, 183, 49);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.f-box:after {
+    content: url(/Bild\ Material/bg-nline.png);
+    position: absolute;
+    top: -32px;
+    left: 133px;
+}
+
+.f-box-img {
+    padding-top: 4rem;
+}
+
+.f-box-text {
+    padding-top: 2rem;
+    font-family: sans-serif;
+    text-align: left;
+    line-height: 1.2;
 }

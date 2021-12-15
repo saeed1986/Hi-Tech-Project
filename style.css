@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: white;
+}
+
+/* header */
+
+header {
+    background-image: url(/Bild\ Material/header.jpg);
+    background-repeat: no-repeat;
+    height: 52.4rem;
+}
+
+.header-box {
+    color: white;
+    padding-top: 10rem;
+    margin-left: 75rem;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+
+.h-h1 {
+    font-size: 2.4rem;
+    padding-bottom: 0.5rem;
+}
+
+.h-h4 {
+    color: red;
+    padding-bottom: 0.3rem;
+    text-transform: uppercase;
+}
+
+.h-p {
+    width: 25rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    padding: 1rem 0rem;
+}
+
+.h-p-1 {
+    color: red;
+    padding-top: 1rem;
+}
+
+.h-logo {
+    padding-top: 3rem;
+    width: 8rem;
+}
+
+/* teasor */
+
+.teasor {
+    background-image: url(/Bild\ Material/turing-bg.jpg);
+    background-repeat: no-repeat;
+    height: 82.4rem;
+    text-align: center;
+}
+
+.t-h2 {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 2rem;
+}
+
+.t-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 10rem 10rem 10rem;
+    color: white;
+    column-gap: 5rem;
+    text-align: left;
+}
+
+.t-item-headline {
+    color: red;
+}
+
+.t-g-item

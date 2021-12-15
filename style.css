@@ -70,20 +70,31 @@ header {
     color: white;
     text-align: center;
     font-family: sans-serif;
-    padding-top: 2rem;
+    padding: 6rem 0rem 2rem;
 }
 
 .t-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0rem 10rem 10rem 10rem;
+    padding: 0rem 20rem 0rem 10rem;
     color: white;
     column-gap: 5rem;
+    row-gap: 5rem;
     text-align: left;
 }
 
-.t-item-headline {
-    color: red;
+.t-box-item {
+    padding-left: 10rem;
 }
 
-.t-g-item
+.t-box-item-headline {
+    color: red;
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+}
+
+.t-box-item-text {
+    line-height: 1.5;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+}

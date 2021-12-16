@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    // font-family: 'Geforce';
     font-size: 1.6rem;
     color: white;
     background-color: black;
@@ -25,14 +26,13 @@ body {
 
 .h-box {
     color: white;
-    padding-top: 15rem;
-    margin-left: 75rem;
-    font-size: 1.6rem;
-    font-family: sans-serif;
+    padding-top: 10rem;
+    margin-left: 100rem;
+    font-family: 'GeForce';
 }
 
 .h-h1 {
-    font-size: 2.4rem;
+    font-size: 3.4rem;
     padding-bottom: 0.5rem;
 }
 
@@ -40,18 +40,23 @@ body {
     color: rgb(105, 171, 0);
     padding-bottom: 0.3rem;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .h-p {
-    width: 25rem;
-    font-size: 1.2rem;
+    font-family: 'DINPro', sans-serif;
+    width: 55rem;
+    font-size: 1.6rem;
     line-height: 1.3;
     padding: 1rem 0rem;
 }
 
+
 .h-p-green {
+    text-transform: uppercase;
     color: rgb(105, 171, 0);
     padding-top: 1rem;
+    font-weight: bold;
 }
 
 .h-logo {
@@ -66,14 +71,18 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     padding: 5rem;
+    font-family: 'GeForce', sans-serif;
+    font-weight: bold;
 }
 
 .t-h2 {
     display: flex;
     justify-content: center;
     color: white;
-    font-family: sans-serif;
+    font-family: 'GeForce';
+    font-weight: lighter;
     padding: 2rem 0rem 1rem 0rem;
+    font-size: 3.4rem;
 }
 
 .t-border {
@@ -95,11 +104,12 @@ body {
     justify-self: center;
     align-self: stretch;
     padding-left: 0rem;
-    width: 40rem;
+    width: 50rem;
+    font-weight: lighter;
 }
 
 .t-box-item-headline {
-    color: rgb(105, 171, 0);
+    color: rgb(120, 184, 0);
     font-size: 1.8rem;
     padding-bottom: 2rem;
     font-family: sans-serif;
@@ -116,23 +126,28 @@ body {
 .hero {
     background-image: url(/Bild\ Material/rtx-erleben.jpg);
     background-repeat: no-repeat;
-    height: 58rem;
     background-color: black;
+    width: 100%;
 }
 
 .he-box {
-    padding: 15rem 21rem;
-    width: 75rem;
+    padding: 15rem 15rem;
+    width: 55rem;
     color: white;
+    font-family: 'GeForce';
+    font-weight: lighter;
 }
 
-.h-box-headline {
+.he-box-headline {
     color: white;
     padding-bottom: 1.5rem;
+    font-size: 3.4rem;
+    font-weight: lighter;
 }
 
-.h-box-text {
-    line-height: 1.5;
+.he-box-text {
+    line-height: 1.7;
+    font-family: 'DINPro';
 }
 
 /* main */
@@ -142,7 +157,8 @@ body {
 }
 
 .m-header {
-    font-size: 1.8rem;
+    font-size: 3.4rem;
+    font-weight: lighter;
     text-align: center;
     padding-top: 5rem;
     font-family: sans-serif;
@@ -167,15 +183,34 @@ body {
     gap: 2rem;
 }
 
+.m-box-item-img-2 {
+    height: 90%;
+}
+
 .m-box-item-headline {
     justify-self: center;
     align-self: center;
     color: rgb(121, 183, 49);
 }
 
+/* copy of main */
+
+.m-box-btn {
+    background-color: rgb(118, 184, 0);
+    color: white;
+    width: 20rem;
+    padding: 1rem 2rem;
+    align-self: center;
+    font-family: 'DINPro';
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
 /* footer */
 
 .footer {
+    padding-top: 10rem;
     background-color: black;
     height: 23rem;
     color: rgb(80, 80, 80);
@@ -210,16 +245,49 @@ body {
 
 /* media Queries */
 
+
+@media (max-width: 1650px) {
+    .h-box {
+        margin-left: 75rem;
+    }
+}
+
+
+@media (max-width: 1350px) {
+
+    .header {
+        margin-left: -15rem;
+    }
+
+    .h-box {
+        width: 50rem;
+        margin-left: 75rem;
+    }
+
+    .he-box {
+        padding: 10rem -10rem;
+        width: 55rem;
+        color: white;
+        font-family: 'GeForce';
+        font-weight: lighter;
+    }
+}
+
+
 @media (max-width: 1150px) {
 
     .header {
         background-image: url(/Bild\ Material/header-medium.jpg);
         background-color: rgb(4, 4, 4);
-        margin-left: -10rem;
+        margin-left: -20rem;
     }
 
     .h-box {
         margin-left: 65rem;
+    }
+
+    .h-p {
+        width: 30rem;
     }
 
     .teasor {
@@ -243,6 +311,22 @@ body {
         width: 80rem;
     }
 
+    .hero {
+        background-image: url(/Bild\ Material/rtx-erleben-medium.jpg);
+        background-size: cover;
+        padding-right: 50rem;
+    }
+
+    .he-box {
+        padding: 15rem 5rem;
+        width: 36rem;
+    }
+
+    .m-box {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 3rem;
+        width: 90%;
+    }
 }
 
 
@@ -250,15 +334,19 @@ body {
 
     .header {
         background-image: url(/Bild\ Material/header-medium.jpg);
-        margin-left: -35rem;
+        margin-left: -36rem;
     }
 
     .h-box {
-        margin-left: 50rem;
+        margin-left: 53rem;
         background-color: black;
-        opacity: 0.8;
+        opacity: 0.7;
         width: 50rem;
-        padding: 11rem 7rem;
+        padding: 8rem 7rem;
+    }
+
+    .h-p {
+        width: 25rem;
     }
 
     /* teasor */
@@ -294,9 +382,20 @@ body {
     }
 
 
+    .hero {
+        background-image: url(/Bild\ Material/rtx-erleben-small.jpg);
+        opacity: 1;
+    }
+
+    .he-box {
+        background-color: black;
+        opacity: 0.8;
+        padding: 5rem 5rem;
+        width: 100vw;
+    }
 
     .m-box {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -320,13 +419,25 @@ body {
         opacity: 0.8;
     }
 
+    .h-p {
+        width: 25rem;
+    }
+
     .t-border {
         width: 100%;
+    }
+
+    .hero {
+        background-image: none;
     }
 
     .he-box {
         padding: 5rem 15rem 5rem 5rem;
         width: 50rem;
+    }
+
+    .h-box-text {
+        width: 23rem;
     }
 
     .m-box {

@@ -222,13 +222,13 @@ body {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    position: relative;
 }
 
-.f-box:after {
-    content: url(/Bild\ Material/bg-nline.png);
+.f-box-img-inline {
     position: absolute;
-    top: -32px;
-    left: 133px;
+    top: -3.8rem;
+    left: 0rem;
 }
 
 .f-box-img {
@@ -236,7 +236,7 @@ body {
 }
 
 .f-box-text {
-    padding-top: 2rem;
+    padding: 4rem 0rem;
     font-family: sans-serif;
     text-align: left;
     line-height: 1.2;
@@ -249,6 +249,10 @@ body {
 @media (max-width: 1650px) {
     .h-box {
         margin-left: 75rem;
+    }
+
+    .m-box {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -443,4 +447,20 @@ body {
     .m-box {
         grid-template-columns: 1fr;
     }
+
+
+    .f-box {
+        border-top: 5px solid rgb(121, 183, 49);
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+    }
+
+    .f-box-img-inline {
+        position: absolute;
+        top: -4.7rem;
+        left: -4rem;
+    }
+
 }

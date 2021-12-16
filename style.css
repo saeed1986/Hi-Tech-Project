@@ -218,7 +218,7 @@ body {
 }
 
 .f-box {
-    border-top: 5px solid rgb(121, 183, 49);
+    border-top: 4px solid rgb(121, 183, 49);
     width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -227,8 +227,8 @@ body {
 
 .f-box-img-inline {
     position: absolute;
-    top: -3.8rem;
-    left: 0rem;
+    top: -3.7rem;
+    left: -4rem;
 }
 
 .f-box-img {
